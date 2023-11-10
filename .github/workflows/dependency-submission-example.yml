@@ -20,6 +20,7 @@ jobs:
       - run: npm install npm@8.4.1 -g
       - name: Install NPM dependencies
         run: npm ci
+      - name: install jest as dev
         run: npm install --save-dev jest-cli
       - name: Run all NPM build/test actions
         run: npm -w:example rebuild && npm run all -w:example
